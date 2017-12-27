@@ -2,34 +2,12 @@
 .spr{
     background-image: url("../images/sprites_0.png");
 }
-/*header a{
-    display: inline-block;
-    border: 1px solid transparent;
-    border-top: 2px solid transparent;
-    border-bottom: 1px solid transparent;
-    line-height: 51px;
-    text-align: center;
-    font-family: "微软雅黑";
-    font-size: 18px;
-    padding: 0 6px;
-    transition: border 0.6s;
-}*/
+
 .contact_box,.logo_box,.login_box,.add_sel{
     position: absolute;
 }
 .main_nav_box li{
     display: inline-block;
-}
-header{
-    width: auto;
-    height: 296px;
-    position: relative;
-}
-.header_cont{
-    max-width: 1260px;
-    height: 242px;
-    margin: 0 auto;
-    position: relative;
 }
 .contact_box{
     top: 0;
@@ -82,10 +60,7 @@ header{
 /*********************************************/
 /* 头部样式 */
 /*********************************************/
-header {
-    width: auto;
-    position: relative;
-}
+
 .logo,.shoping-cart,.login,.home_h1,.form-group i {
     background: url(../images/sprites_0.png);
     cursor: pointer;
@@ -101,14 +76,16 @@ header {
     margin: 0 auto;
     position: relative;
 }
-.wrap {
+.headerWrap{
     width: 100%;
-    height: 50px;
-    position: fixed;
     background: #e0e0e0;
-    position: fixed;
+}
+.wrap {
+    width: 1240px;
+    height: 50px;
+    margin:0 auto;
+    position: relative;
     z-index:100;
-
 }
 .logo a {
     width: 100%;
@@ -117,7 +94,6 @@ header {
 .contact,.logo{
     display: inline-block;
 }
-
 .contact {
     width: auto;
     line-height: 50px;
@@ -136,7 +112,6 @@ header {
     background-size: cover;
     background-position: center center;
 }
-
 /*logo*/
 .logo {
     width: 100px;
@@ -151,8 +126,8 @@ header {
 }
 /*用户信息和购物车*/
 .loginOrShop {
-    width: 200px;
-    height: 25px;
+    width: 120px;
+    height: 17px;
     right:20px;
     top:50%;
     transform: translateY(-50%);
@@ -176,13 +151,13 @@ header {
 .login {
     display: inline-block;
     margin:0 20px 0 20px;
-    width: 25px;
-    height: 25px;
+    width: 17px;
+    height: 17px;
+
     background-image: url("../images/login.png");
     background-size: cover;
     background-position: center center;
 }
-
 .personInfo {
     height: 30px;
     line-height: 30px;
@@ -199,8 +174,8 @@ header {
 }
 /*购物车*/
 .shoping-cart {
-    width: 25px;
-    height: 25px;
+    width: 17px;
+    height: 17px;
     display: inline-block;
     background-image: url("../images/cart.png");
     background-size: cover;
@@ -279,17 +254,22 @@ header {
 /*导航栏*/
 .main-nav {
     width: 100%;
-    height: 54px;
+    height: 49px;
     background: url("../images/header_bg.jpg") repeat;
     opacity: 0.96;
     border-top: 1px solid #d1d0d0;
+    /*position: fixed;*/
     border-bottom: 1px solid #c9c8c8;
     top: 220px;
     z-index: 10;
 }
+.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
 .nav{
     width: 1240px;
-
     margin:0 auto;
     position: relative;
 }
@@ -322,13 +302,14 @@ header {
     display: block;
 }
 .ckd {
-    background-color: #FAFFE6;
+    background-color: #e77817;
+    /*border-bottom: 1px solid #B8B6B6;*/
 }
 .drop {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 54px;
+    top: 49px;
     display: none;
     box-sizing: border-box;
     border: 1px solid #B8B6B6;
@@ -350,14 +331,13 @@ header {
 .drop>a:hover {
     color: #F12121;
 }
-.navbar>li>a:hover {
-    color: #F12121
-}
+
 /*footer*/
 .footer_mark-keyword i,.sina_rqcode-small,.weixin_rqcode-small,.sina_logo-small,.weixin_logo-small {
     background: url(../images/sprites_0.png);
     cursor: pointer;
 }
+
 .footer {
     background-color:#f0f2f3;
     margin-top:72px;
@@ -366,7 +346,7 @@ header {
 .footer_title {
     width:100%;
     height:76px;
-    background-color:#82c353;
+    background: #e77817;
     line-height:76px;
     text-align:center;
     letter-spacing:8px;
@@ -473,10 +453,10 @@ header {
 .footer_copyright {
     width:712px;
     height:38px;
-    background-color:#82c353;
+    /*background: url("../images/header_bg.jpg") repeat;*/
     text-align:center;
     font:normal 15px/38px "微软雅黑";
-    color:#fff;
+    color:#373735;
     margin:0 auto;
     margin-top:36px;
 }
@@ -499,6 +479,11 @@ header {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+.webName {
+    text-align: center;
+    padding: 20px;
+    color: #e77817;
 }
 .title_box{
     width: 98%;

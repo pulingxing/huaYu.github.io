@@ -11,58 +11,60 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/goodsdetails.css">
     <link rel="stylesheet" href="css/shopcar.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
     <!--顶部-->
     <header>
 
     </header>
-    <section>
+    <section class="wrapBox">
         <!--标题-->
         <div class="mid_cont">
-            <h1 class="home_h1 spr"></h1>
+            <h1 class="webName">花·语二手家居网站</h1>
             <div class="figure_box clearfix">
-                <div class="figure_banner fl" style="overflow: hidden">
-                    <img src="" alt="气派生活" class="show">
-                    <img src="" alt="木制的古典">
-                    <img src="" alt="简约格调">
-                    <img src="" alt="气派生活">
+                <div class="swiper-container figure_banner fl" style="overflow: hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="" alt="气派生活" class="show"></div>
+                        <div class="swiper-slide"><img src="" alt="木制的古典"></div>
+                        <div class="swiper-slide"><img src="" alt="简约格调"></div>
+                        <div class="swiper-slide"><img src="" alt="气派生活"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+
                 </div>
-                <div class="figure_ctr clearfix">
-                    <span class="cl"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="fr">
-                    <img src="" alt="1">
+                <div class="right fr">
+                    <img src="" alt="">
                 </div>
             </div>
+
+
             <div class="mid_part_img clearfix">
                 <div class="fl">
-                    <img src="" alt="2">
+                    <img src="" alt="">
                 </div>
                 <div class="mid_img">
-                    <img src="" alt="3">
+                    <img src="" alt="">
                 </div>
                 <div class="fr">
-                    <img src="" alt="4">
+                    <img src="" alt="">
                 </div>
             </div>
             <div class="bottom_part_img clearfix">
                 <div class="fl">
-                    <img src="" alt="5">
+                    <img src="" alt="">
                 </div>
                 <div class="fr">
-                    <img src="" alt="6">
+                    <img src="" alt="">
                 </div>
             </div>
             <div class="last_img clearfix">
                 <div class="fl">
-                    <img src="" alt="7">
+                    <img src="" alt="">
                 </div>
                 <div class="bigs_img fr">
-                    <img src="" alt="8">
+                    <img src="" alt="">
                 </div>
             </div>
         </div>
@@ -73,7 +75,24 @@
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+
     <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay:true,
+            lazyLoading : true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 </html>
